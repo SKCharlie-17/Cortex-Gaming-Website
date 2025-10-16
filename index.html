@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Gaming Community - Home</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- this is connected to the folder for css -->
+
+</head>
+
+<body>
+
+    <div class="video-background">
+        <video autoplay loop id="background-video" src="assets/game202.mp4"> <!--this is for the video which is the background t-->
+        Your browser does not support the video file.
+    </video>
+    </div>
+
+    <!-- This is javascript for volume control for the main background video-->
+    <script>
+        // Wait for the page content to load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Find the video element by its ID
+            const video = document.getElementById('background-video');
+
+            // Set the volume to 10%
+            // You can change 0.5 to any value from 0.0 to 1.0
+            video.volume = 0.1;
+        });
+    </script>
+
+</body>
+
+</html>
+
+<header>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about-us.html">About Us </a></li>
+                <li><a href="/newsletter.html">News</a></li>
+                <li><a href="/faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="/login.html" class="btn btn-login">Login / </a>
+            <a href="/registration.html" class="btn btn-register"> Register </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hover-content">
+        <h1>Welcome to Our Gaming Community</h1>
+        <p>The ultimate hub for gamers to connect, compete, and conquer together.</p>
+        <a href="/registration.html" class="btn btn-cta">Join The Fight!</a>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="back-to-top">
+            <a href="#top" class="top-link">▲ BACK TO TOP</a>
+        </div>
+
+        <div class="footer-content-wrapper">
+            <div class="footer-about">
+                <h3>Your Gaming Community</h3>
+                <p>The ultimate hub for gamers to connect, compete, and conquer together. Join our forums and Discord to be a part of the action.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Discord">Discord</a>
+                    <a href="#" aria-label="Twitch">Twitch</a>
+                    <a href="#" aria-label="X (Twitter)">X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Gaming Community. All Rights Reserved. Built by UI NINJAs.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
