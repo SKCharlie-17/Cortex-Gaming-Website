@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Gaming Community - Home</title>
-
+    <title>Cortex - Home</title>
+    <link rel="icon" href="/assets/LOGO1.png" type="image/png">
     <link rel="stylesheet" href="styles/style.css">
     <!-- this is connected to the folder for css -->
 
@@ -14,25 +14,16 @@
 <body>
 
     <div class="video-background">
-        <video autoplay loop id="background-video" src="assets/game202.mp4"> <!--this is for the video which is the background t-->
+        <video muted autoplay loop id="background-video" src="/assets/game202.mp4"> <!--this is for the video which is the background t-->
         Your browser does not support the video file.
     </video>
     </div>
 
-    <!-- This is javascript for volume control for the main background video-->
-    <script>
-        // Wait for the page content to load
-        document.addEventListener('DOMContentLoaded', (event) => {
-            // Find the video element by its ID
-            const video = document.getElementById('background-video');
-
-            // Set the volume to 10%
-            // You can change 0.5 to any value from 0.0 to 1.0
-            video.volume = 0.1;
-        });
-    </script>
-
 </body>
+
+<div id="loader-wrapper">
+    <div class="loader"></div>
+</div>
 
 </html>
 
@@ -40,16 +31,18 @@
     <nav>
         <div class="nav-left">
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about-us.html">About Us </a></li>
-                <li><a href="/newsletter.html">News</a></li>
-                <li><a href="/faqs.html">FAQs</a></li>
+                <li><a href="/index.html"><button>Home</button></a></li>
+                <!--yeh button tag add kiya hai hover ke liye-->
+                <li><a href="/about-us.html"><button>About Us</button></a></li>
+                <li><a href="/newsletter.html"><button>News</button></a></li>
+                <li><a href="/faqs.html"><button>FAQs</button></a></li>
             </ul>
         </div>
 
+
         <div class="nav-right">
-            <a href="/login.html" class="btn btn-login">Login / </a>
-            <a href="/registration.html" class="btn btn-register"> Register </a>
+            <a href="/login.html" class="btn btn-login"><button>Login</button></a>
+            <a href="/registration.html" class="btn btn-register"><button>Register</button></a>
         </div>
     </nav>
 </header>
@@ -58,10 +51,14 @@
     <section class="hover-content">
         <h1>Welcome to Our Gaming Community</h1>
         <p>The ultimate hub for gamers to connect, compete, and conquer together.</p>
-        <a href="/registration.html" class="btn btn-cta">Join The Fight!</a>
+        <a href="/registration.html" class="btn btn-cta"><button>Join The Fight!</button></a>
     </section>
 </main>
 
+
+<p class="gap1">
+    <!--this is to make a gap between bg video and footer also this is is inline css -->
+</p>
 <footer class="site-footer">
     <div class="footer-container">
 
@@ -71,16 +68,16 @@
 
         <div class="footer-content-wrapper">
             <div class="footer-about">
-                <h3>Your Gaming Community</h3>
+                <h3>Cortex</h3>
                 <p>The ultimate hub for gamers to connect, compete, and conquer together. Join our forums and Discord to be a part of the action.</p>
             </div>
 
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="news.html">News</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="about-us.html">About-Us</a></li>
                     <li><a href="faqs.html">FAQs</a></li>
                 </ul>
             </div>
@@ -96,10 +93,12 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 Your Gaming Community. All Rights Reserved. Built by UI NINJAs.</p>
+            <p>&copy; 2025 CORTEX All Rights Reserved. Built by UI NINJAs.</p>
         </div>
     </div>
 </footer>
+
+<script src="scripts/loader.js"></script>
 
 </body>
 

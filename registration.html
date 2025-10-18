@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Your Gaming Community</title>
+    <title>Cortex - Register</title>
+    <link rel="icon" href="/assets/LOGO1.png" type="image/png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -12,15 +14,11 @@
     <nav>
         <div class="nav-left">
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about-us.html">About Us </a></li>
-                <li><a href="/newsletter.html">News</a></li>
-                <li><a href="/faqs.html">FAQs</a></li>
+                <li><button><a href="/index.html">Home</a></button></li>
+                <li><button><a href="/about-us.html">About Us </a></button></li>
+                <li><button><a href="/newsletter.html">News</a></button></li>
+                <li><button><a href="/faqs.html">FAQs</a></button></li>
             </ul>
-        </div>
-        <div class="nav-right">
-            <a href="login.html" class="btn btn-login">Login / </a>
-            <a href="registration.html" class="btn btn-register">Register</a>
         </div>
     </nav>
 </header>
@@ -55,8 +53,25 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <label for="date-of-birth">Date Of Birth</label>
+                    <!-- Date picker - shows calendar to select date -->
+                    <input type="date" id="date-of-birth" name="date-of-birth" required>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <!-- Dropdown menu to select one option -->
+                    <select id="country" name="country" required>
+                        <!-- Default/placeholder option -->
+                        <option value="">Select Your Country</option>
+                        <!-- Selectable country options -->
+                        <option value="india">India</option>
+                        <option value="china">China</option>
+                        <option value="japan">Japan</option>
+                        <option value="america">America</option>
+                    </select>
                 </div>
 
                 <button type="submit" class="btn">Register</button>
@@ -84,9 +99,9 @@
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="news.html">News</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="about-us.html">About-Us</a></li>
                         <li><a href="faqs.html">FAQs</a></li>
                     </ul>
                 </div>
@@ -102,7 +117,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Your Gaming Community. All Rights Reserved. Built by UI NINJAs.</p>
+                <p>&copy; 2025 CORTEX All Rights Reserved. Built by UI NINJAs.</p>
             </div>
         </div>
     </footer>

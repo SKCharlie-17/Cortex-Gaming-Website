@@ -4,29 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Your Gaming Community</title>
+    <title>Cortex - Login</title>
+    <link rel="icon" href="/assets/LOGO1.png" type="image/png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<header>
-    <nav>
-        <div class="nav-left">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about-us.html">About Us </a></li>
-                <li><a href="/newsletter.html">News</a></li>
-                <li><a href="/faqs.html">FAQs</a></li>
-            </ul>
-        </div>
-
-        <div class="nav-right">
-            <a href="/login.html" class="btn btn-login">Login / </a>
-            <a href="/registration.html" class="btn btn-register"> Register </a>
-        </div>
-    </nav>
-</header>
-
 <body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <!--gave button tag to left nav items-->
+                    <li><a href="/index.html"><button>Home</button></a></li>
+                    <li><a href="/about-us.html"><button>About Us </button></a></li>
+                    <li><a href="/newsletter.html"><button>News</button></a></li>
+                    <li><a href="/faqs.html"><button>FAQs</button></a></li>
+                </ul>
+            </div>
+
+            <!-- removed right nav —charlie -->
+
+        </nav>
+    </header>
+
+
 
     <div class="video-background">
         <video autoplay muted loop id="background-video" src="/assets/loginbg.mp4">
@@ -39,7 +40,6 @@
             <h1>Welcome Back!</h1>
 
             <form action="#" method="POST">
-
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
@@ -67,16 +67,16 @@
 
             <div class="footer-content-wrapper">
                 <div class="footer-about">
-                    <h3>Your Gaming Community</h3>
+                    <h3>Cortex</h3>
                     <p>The ultimate hub for gamers to connect, compete, and conquer together. Join our forums and Discord to be a part of the action.</p>
                 </div>
 
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="news.html">News</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="about-us.html">About-Us</a></li>
                         <li><a href="faqs.html">FAQs</a></li>
                     </ul>
                 </div>
@@ -92,7 +92,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Your Gaming Community. All Rights Reserved. Built by UI NINJAs.</p>
+                <p>&copy; 2025 CORTEX All Rights Reserved. Built by UI NINJAs.</p>
             </div>
         </div>
     </footer>
