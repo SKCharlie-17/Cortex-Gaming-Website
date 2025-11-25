@@ -18,20 +18,40 @@ The goal was to create a responsive, engaging, and accessible user interface, de
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+✨ Features
 
-Responsive Layout: Full compatibility across desktop, tablet, and mobile devices (using CSS Grid and Flexbox).
 
-Dynamic Content Filtering: Interactive filtering of forum posts or game categories using vanilla JavaScript (or a framework like React/Vue).
+- Live Previews (e.g., of news posts or tournament bracket updates)
 
-User Authentication Flow: Placeholder/Mockup pages for Login and Sign-up interfaces.
+- Fullscreen Mode (e.g., for viewing embedded streams or galleries)
 
-Modern UI/UX: Implementation of a dark theme, custom typography, and hover effects appropriate for a gaming audience.
+- Cross-Platform/Mobile Responsiveness
 
-Component-Based Design: (If using a framework) Structure built using reusable components for elements like navigation bars, cards, and modals.
+- Sticky Navigation Header
+
+- Animated Statistics Counter (for Active Members, Tournaments, etc.)
+
+- Smooth Scroll "Back to Top" Button
+
+- Live Server Status Display
+
+- Discord Server Widget Integration
+
+- Image Gallery/Carousel Component (for showcasing tournament highlights)
+
+- Copy-to-Clipboard Functionality (for Discord link or team IDs)
+
+- Subtle Parallax Effect on the Hero section
+
+- Responsive Layout: Full compatibility across desktop, tablet, and mobile devices (using CSS Grid and Flexbox).
+
+- Dynamic Content Filtering: Interactive filtering of forum posts or game categories using vanilla JavaScript (or a framework like React/Vue).
+
+- User Authentication Flow: Placeholder/Mockup pages for Login and Sign-up interfaces.
+
+- Modern UI/UX: Implementation of a dark theme, custom typography, and hover effects appropriate for a gaming audience.
+
+- Component-Based Design: (If using a framework) Structure built using reusable components for elements like navigation bars, cards, and modals.
 
 
 ## License
