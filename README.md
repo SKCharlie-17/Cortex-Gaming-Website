@@ -36,9 +36,9 @@ The goal was to create a responsive, engaging, and accessible user interface, de
 - Discord Server Widget Integration
 
 - Image Gallery/Carousel Component
-- 
+
 - Copy-to-Clipboard Functionality
-- 
+
 - Subtle Parallax Effect on the Hero section
 
 - Responsive Layout: Full compatibility across desktop, tablet, and mobile devices 
