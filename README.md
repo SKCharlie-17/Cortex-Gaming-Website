@@ -85,7 +85,7 @@ Follow these steps to get a local copy of the project running on your machine:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/anask5/Cortex-Gaming-Website.git](https://github.com/anask5/Cortex-Gaming-Website.git)
+    git clone (https://github.com/anask5/Cortex-Gaming-Website.git)
     ```
 2.  **Navigate to the project directory:**
     ```bash
