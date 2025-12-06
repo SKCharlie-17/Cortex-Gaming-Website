@@ -19,10 +19,10 @@ This project focuses on **clean UI/UX**, **high performance**, and **interactive
 
 ## 👨‍💻 Authors
 - [@anaskhan](https://github.com/anask5/)
-- @aryan  
-- @suryansh  
-- @mayank  
-- @saishah  
+- [@aryan](https://github.com/aryan060606)
+- [@suryansh](https://github.com/SKCharlie-17)
+- [@mayankbhambu](https://github.com/mayankbhambhu)
+- [@saishahsehgal](https://github.com/SaishahSehgal)
 
 ---
 
