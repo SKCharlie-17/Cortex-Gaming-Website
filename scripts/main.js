@@ -1,16 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-
-    // --- 1. GLOBAL FOOTER (You already have this) ---
-    const footerPlaceholder = document.getElementById("footer-placeholder");
-    if (footerPlaceholder) {
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                footerPlaceholder.innerHTML = data;
-            });
-    }
-
-    // --- 2. GLOBAL COOKIE BANNER (Add this new section) ---
+  // --- 2. GLOBAL COOKIE BANNER (Add this new section) ---
     const cookiePlaceholder = document.getElementById("cookie-placeholder");
     if (cookiePlaceholder) {
         fetch('cookie.html')
