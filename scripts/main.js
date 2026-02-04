@@ -101,6 +101,7 @@
       // --- END: Glow Card Effect ---
 
   });
+<<<<<<< HEAD
 
   const MIN_WIDTH = 1024;
   const warning = document.getElementById("screen-warning");
@@ -127,3 +128,5 @@
   }
 
   continueBtn.addEventListener("click", hideWarning);
+=======
+>>>>>>> b955c93f0d21a055e4b75ac7db6e29246c7d579e
