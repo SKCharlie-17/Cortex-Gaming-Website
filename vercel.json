@@ -1,50 +1,42 @@
 {
-  "version": 2,
-  
-  "cleanUrls": true,
-  
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Strict-Transport-Security",
-          "value": "max-age=63072000; includeSubDomains; preload"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "no-referrer-when-downgrade"
-        }
-      ]
-    },
-    {
-      "source": "/(styles|scripts|images)/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ],
-  
-  "redirects": [
-    {
-      "source": "/old-forums",
-      "destination": "https://discord.gg/#",
-      "permanent": true
-    }
-  ],
-  
-  "rewrites": [
-    {
-      "source": "/api/status",
-      "destination": "https://#/api/v1/game-status"
-    }
-  ]
-}
+    "version": 2,
 
+
+    "cleanUrls": true,
+
+    "headers": [{
+            "source": "/(.*)",
+            "headers": [{
+                    "key": "Strict-Transport-Security",
+                    "value": "max-age=63072000; includeSubDomains; preload"
+                },
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                },
+                {
+                    "key": "Referrer-Policy",
+                    "value": "no-referrer-when-downgrade"
+                }
+            ]
+        },
+        {
+            "source": "/(styles|scripts|images)/(.*)",
+            "headers": [{
+                "key": "Cache-Control",
+                "value": "public, max-age=31536000, immutable"
+            }]
+        }
+    ],
+
+    "redirects": [{
+        "source": "/old-forums",
+        "destination": "https://discord.gg/#",
+        "permanent": true
+    }],
+
+    "rewrites": [{
+        "source": "/api/status",
+        "destination": "https://#/api/v1/game-status"
+    }]
+}
