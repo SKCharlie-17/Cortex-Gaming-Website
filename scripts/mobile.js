@@ -4,8 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!warning || !continueBtn) return;
 
-  const isTouchDevice =
-    navigator.maxTouchPoints > 0 ||
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+  const isPhone =
+    /android|iphone|ipod/i.test(ua) &&
+    navigator.maxTouchPoints > 0 &&
     window.matchMedia("(pointer: coarse)").matches;
 
   function showWarning() {
@@ -18,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "";
   }
 
-  if (isTouchDevice) {
+  if (isPhone) {
     showWarning();
   }
 
