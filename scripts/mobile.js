@@ -1,29 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
   const warning = document.getElementById("screen-warning");
-  const continueBtn = document.getElementById("continue-btn");
+  const btn = document.getElementById("continue-btn");
 
-  if (!warning || !continueBtn) return;
+  if (!warning || !btn) {
+    console.error("Screen warning elements missing");
+    return;
+  }
 
-  const ua = navigator.userAgent || navigator.vendor || window.opera;
+  const ua = navigator.userAgent.toLowerCase();
 
   const isPhone =
-    /android|iphone|ipod/i.test(ua) &&
-    navigator.maxTouchPoints > 0 &&
-    window.matchMedia("(pointer: coarse)").matches;
-
-  function showWarning() {
-    warning.style.display = "flex";
-    document.body.style.overflow = "hidden";
-  }
-
-  function hideWarning() {
-    warning.style.display = "none";
-    document.body.style.overflow = "";
-  }
+    (
+      ua.includes("android") ||
+      ua.includes("iphone") ||
+      ua.includes("ipod")
+    ) &&
+    navigator.maxTouchPoints >= 4 &&
+    screen.orientation !== undefined;
 
   if (isPhone) {
-    showWarning();
+    warning.style.display = "flex";
+    document.body.classList.add("warning-open");
   }
 
-  continueBtn.addEventListener("click", hideWarning);
+  btn.onclick = () => {
+    warning.style.display = "none";
+    document.body.classList.remove("warning-open");
+  };
 });
