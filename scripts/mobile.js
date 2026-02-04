@@ -1,22 +1,24 @@
-const MIN_WIDTH = 1024;
-
 document.addEventListener("DOMContentLoaded", () => {
   const warning = document.getElementById("screen-warning");
   const continueBtn = document.getElementById("continue-btn");
 
   if (!warning || !continueBtn) return;
 
+  const isTouchDevice =
+    navigator.maxTouchPoints > 0 ||
+    window.matchMedia("(pointer: coarse)").matches;
+
   function showWarning() {
     warning.style.display = "flex";
-    document.body.classList.add("warning-open");
+    document.body.style.overflow = "hidden";
   }
 
   function hideWarning() {
     warning.style.display = "none";
-    document.body.classList.remove("warning-open");
+    document.body.style.overflow = "";
   }
 
-  if (window.innerWidth < MIN_WIDTH) {
+  if (isTouchDevice) {
     showWarning();
   }
 
