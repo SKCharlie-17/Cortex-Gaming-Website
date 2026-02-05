@@ -13,7 +13,7 @@ This project focuses on **clean UI/UX**, **high performance**, and **interactive
 ---
 
 ## 🔗 Live Demo
-👉 **Visit the Website:** https://cortex-gaming-website.vercel.app/
+👉 **Visit the Website:** https://cortex-gaming-website.vercel.app/ , https://cortex.anask.in/
 
 ---
 
