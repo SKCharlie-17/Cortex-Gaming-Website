@@ -7,7 +7,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 # 🎮 CORTEX - Gaming Community Website  
-A modern, fully responsive gaming community front-end built as a final assignment for the **Front-End Development** course at **Shoolini University**.  
+A modern, dekstop focused gaming community front-end built as a final assignment for the **Front-End Development** course at **Shoolini University**.  
 This project focuses on **clean UI/UX**, **high performance**, and **interactive components** using pure HTML, CSS, and JavaScript.
 
 ---
@@ -53,7 +53,7 @@ Performance optimization methods used:
 - Minimized render-blocking elements  
 - Optimized Critical Rendering Path  
 - Lightweight JavaScript modules  
-- Responsive layout grid system  
+- Dekstop layout grid system  
 
 ---
 
@@ -63,7 +63,7 @@ Performance optimization methods used:
 - Modern **dark gaming theme**  
 - Custom typography + hover animations  
 - Clean, accessible layout  
-- Fully responsive on **desktop, tablet, mobile**
+- Fully responsive on **desktop**
 
 ### 🔧 Functional Features  
 - Sticky Navigation Bar  
