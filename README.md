@@ -13,7 +13,7 @@ This project focuses on **clean UI/UX**, **high performance**, and **interactive
 ---
 
 ## 🔗 Live Demo
-👉 **Visit the Website:** https://cortex-gaming-website.vercel.app/ , https://cortex.anask.in/
+👉 **Visit the Website:** https://cortex.fs0ciety.in
 
 ---
 
@@ -63,7 +63,7 @@ Performance optimization methods used:
 - Modern **dark gaming theme**  
 - Custom typography + hover animations  
 - Clean, accessible layout  
-- Fully responsive on **desktop**
+- **Desktop locked** orientation
 
 ### 🔧 Functional Features  
 - Sticky Navigation Bar  
